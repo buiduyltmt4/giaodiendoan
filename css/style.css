@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background: #2C2F4B !important;
+    border: 1px solid;
+    padding: 1.5% 10%;
+    border-bottom: 2px solid red;
+}
+.menu img {
+    width: 39%;
+}
