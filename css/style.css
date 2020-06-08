@@ -7,9 +7,43 @@
 .menu {
     background: #2C2F4B !important;
     border: 1px solid;
-    padding: 1.5% 10%;
+    padding: 1.5% 8%;
     border-bottom: 2px solid red;
 }
+.logo {
+    padding: 0 !important;
+    width: 17%;
+    margin-right: 3%;
+}
 .menu img {
-    width: 39%;
+    width: 100%;
+}
+.menu .active {
+    color: #e84545 !important;
+}
+.menu a {
+    color: white !important;
+    text-transform: uppercase;
+
+}
+.menu ul {
+   width: 70%;
+}
+.menu ul li {
+    margin-right: 0.4%;
+}
+.menu a:hover {
+    color: #e84545 !important;
+}
+.menu .login {
+    margin-left: 8%;
+}
+.menu .gach {
+    color: white;
+    margin-top: 6px;
+}
+.menu .sl {
+    background: red ;
+    padding: 10px;
+    border-radius: 50%;
 }
