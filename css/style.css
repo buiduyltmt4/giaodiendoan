@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
 /*làm trang index*/
 /*làm menu*/
@@ -25,7 +26,8 @@
 .menu a {
     color: white !important;
     text-transform: uppercase;
-
+    font-family: "Play", sans-serif;
+    font-size: 15px;
 }
 .menu ul {
    width: 70%;
@@ -56,19 +58,22 @@
     left: 14%;
     z-index: 10;
     color: white;
+    z-index: 1;
 }
 .content-slide h1 {
+    font-family: "Play", sans-serif;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 56px;
     animation: dichuyen 2s forwards ease;
     opacity: 0;
 }
 .content-slide h3 {
-    font-size: 35px;
+    font-family: "Play", sans-serif;
+    font-size: 38px;
     animation: dichuyen2 1.5s forwards ease;
 }
 .content-slide p {
-    font-size: 20px;
+    font-size: 19px;
     width: 55%;
     margin: 2% 0%;
     animation: dichuyen1 1s forwards ease;
@@ -76,7 +81,7 @@
 }
 .content-slide button {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 19px;
     padding: 1% 2%;
     animation: dichuyen 1.5s forwards ease;
     opacity: 0;
@@ -159,6 +164,7 @@
     background: #fff;
     /*border: 3px solid;*/
     box-shadow: inset 0 3px 0 0 #2b2e4a,inset 0 -3px 0 0 #2b2e4a;
+    font-family: "Play", sans-serif;
 }
 .mona_title h3:before, .mona_title h3:after {
     content: "";
@@ -209,7 +215,7 @@
  .seeMore a {
     display: inline-block;
     color: #e84545;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     transition: 0.2s;
 }
@@ -277,27 +283,48 @@
 
 .ribbon.sale {
     background-color:#2b2e4a;
+    font-size: 13px;
 }
-.card a {
+.waperProduct .card {
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.waperProduct .card a {
     background: #fff;
     border: 1px solid #2b2e4a;
     color: #2b2e4a;
     font-weight: bold;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
 }
-.card a:hover {
+/*.card {*/
+    /*visibility: hidden;*/
+/*}*/
+.waperProduct .card a:hover {
     background:#2b2e4a ;
     color: white;
 }
-.card p {
+.waperProduct .card p {
     color: #e84545;
     font-weight: bold;
 }
-.card h5 {
+.waperProduct .card h5 {
     font-size: 16px;
     color: #2b2e4a;
 }
-.card:hover h5 {
+.waperProduct .card:hover h5 {
     color: #e84545;
+}
+.waperProduct .card:hover {
+    box-shadow: 1px 1px 10px #cccccc;
+}
+.waperProduct .card:hover a {
+    opacity: 1;
+    transform: translateY(0) ;
+    visibility: visible;
 }
 .flash-del {
     text-decoration:line-through !important;
@@ -306,3 +333,432 @@
 .flash-sale {
     color:#f90
 }
+.card:hover {
+
+}
+.news {
+    margin-top: 1%;
+}
+
+.news .card {
+    color: white !important;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.news .card h5 {
+    font-family: "Play", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+.news .card p {
+    color: white;
+    z-index: 1;
+}
+.news .card p:nth-child(2) {
+    font-family: "Play", sans-serif;
+    font-size: 37px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+.news .card p:nth-child(3) {
+    font-size: 19px;
+    font-family: "Play", sans-serif;
+    transition: 0.3s;
+}
+.news .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news button {
+    font-size: 14px;
+    z-index: 1;
+    transition: 0.3s;
+}
+.news .thanh1,.thanh2 {
+    width: 70%;
+    height: 0.7px;
+    background: #cccccc;
+    transition: 0.3s;
+    z-index: 0;
+}
+.news .thanh1 {
+    margin-top: 1%;
+}
+.news .thanh2 {
+    margin-bottom: 1.5%;
+}
+.news img {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.news  .card:hover  img {
+    transform: scale(1);
+}
+.news  .card:hover  .thanh1 {
+    width: 50%;
+    transform: rotate(45deg);
+}
+.news  .card:hover  .thanh2 {
+    transform: rotate(-45deg);
+    width: 50%;
+}
+.news  .card:hover  h5 {
+    transform: translateY(5px);
+}
+.news  .card:hover  p:nth-child(2) {
+    transform: translateY(5px);
+}
+.news  .card:hover  .text {
+    transform: translateY(-5px);
+}
+.news  .card:hover  button {
+    transform: translateY(-5px);
+}
+.news .hcn {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #cccccc;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.news .text {
+    transition: 0.3s;
+}
+.news  .card:hover  .hcn {
+    transform: scale(1);
+}
+.news .thanh3,.thanh6 {
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: #cccccc;
+    transition: 0.7s;
+    transform: scale(0);
+}
+.news .thanh4,.thanh5 {
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background: #cccccc;
+    transition: 1s;
+    transform: scale(0);
+}
+.news .thanh3 {
+    top: 10%;
+}
+.news .thanh6 {
+    bottom: 10%;
+}
+.news .thanh4 {
+    left: 10%;
+}
+.news .thanh5 {
+    right: 10%;
+}
+.news  .card:hover  .thanh3 {
+    transform: scale(1);
+}
+.news  .card:hover  .thanh4 {
+    transform: scale(1);
+}
+.news  .card:hover  .thanh5 {
+    transform: scale(1);
+}
+.news  .card:hover  .thanh6 {
+    transform: scale(1);
+}
+/*css footer*/
+.footer {
+    background: url("../img/bkg_footer.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    border: 1px solid;
+    margin-top: 4%;
+    border-top: 2px solid  #e84545;
+}
+.footer .content_footer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+.footer .content_footer .logo {
+    width: 80%;
+}
+.footer .content_footer hr {
+    border: 0.5px solid  #e84545;
+    background:#e84545 ;
+    width: 80%;
+}
+.footer .content_footer ul li {
+    list-style-type: none;
+    margin-top: 2%;
+}
+.footer .content_footer h5 {
+    color: #ffffff;
+    font-family: "Play", sans-serif;
+    font-style: 20px;
+    text-transform: uppercase;
+}
+.footer .content_footer svg {
+    color: white;
+    margin-right: 3%;
+}
+.footer .content_footer .firt_footer svg {
+    color: #e84545;
+
+}
+.footer .content_footer .firt_footer ul li {
+
+    margin-top: 4%;
+    color: #a4a4a4;
+}
+
+.footer .content_footer a {
+    color: #ffffff;
+}
+.footer .content_footer ul li:hover a {
+    color: #e84545;
+    text-decoration: none;
+}
+.footer .content_footer ul li:hover svg {
+    color: #e84545;
+}
+
+/*trang tin tức*/
+.waperNews .news_left {
+
+}
+.waperNews .news_left ul li {
+    padding: 4% 6%;
+    display: flex;
+    border: 1px solid #e5e5e5;
+    align-items: center;
+}
+.waperNews .news_left ul li a {
+    line-height: 17px;
+    font-size: 14px;
+    color: #2b2e4a ;
+    font-weight: bold;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    -webkit-line-clamp:2;
+    text-overflow: ellipsis;
+    /*height: 38px;*/
+    height: 34px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.waperNews .news_left ul li:hover a {
+    text-decoration: none;
+    color: white;
+}
+.waperNews .news_left ul li:hover  {
+   background: #e84545;
+}
+.waperNews .news_left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 7%;
+
+}
+.waperNews .waperNewsLeft {
+    padding: 0 3%;
+}
+.waperNews .waperNewsLeft h4 {
+    color: #e84545;
+    text-transform:uppercase ;
+    font-size: 18px;
+    padding: 8% 7%;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+.waperNews .waperNewsLeft .liBackgroud {
+    background: #f8f8f8;
+}
+.waperNews .waperNewsRight {
+    border-left: 1px solid #e5e5e5;
+}
+.tintuc {
+    font-size: 20px;
+    color: #1c1c1c;
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 2% auto;
+}
+.waperNews .waperNewsRight .card .card_content {
+    line-height: 23px;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    -webkit-line-clamp:4;
+    text-overflow: ellipsis;
+    height: 92px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.waperNews .waperNewsRight .card:hover {
+    box-shadow: 1px 1px 10px #cccccc;
+}
+.card {
+    transition: 0.4s;
+    overflow: hidden;
+
+}
+.waperNews .waperNewsRight .card {
+    cursor: pointer;
+}
+.waperNews .waperNewsRight .card img {
+    transition: 0.4s;
+}
+.waperNews .waperNewsRight .card:hover img {
+    transform: scale(1.1);
+}
+.mash_body {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+.mash_new {
+    z-index: 2;
+    position: absolute;
+    width: 70%;
+    top: 13%;
+    left: 15%;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    transform:  scale(0);
+
+}
+.mash_new .card {
+    box-shadow: 1px 1px 10px #cccccc;
+}
+.mash_new .img {
+    height: 20%;
+}
+.xuatHienBody {
+    visibility: visible;
+    opacity: 1;
+}
+.xuatHienNew {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.contact {
+    z-index: 3;
+    position: absolute;
+    width: 80%;
+    top: 13%;
+    left: 10%;
+    /*height: 80vh;*/
+    padding-bottom: 1%;
+    border: 1px solid;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    transform:  scale(0);
+    transition: 0.4s;
+    background: #ffffff;
+    box-shadow: 1px 1px 10px #cccccc;
+
+}
+.contact img {
+    width: 45%;
+    margin-top: 15%;
+    float: left;
+}
+.contact ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+.contact ul li {
+    margin-top: 4%;
+    font-size: 16px;
+    color:#2b2e4a ;
+}
+.contact iframe {
+    width: 100%;
+    height: 70vh;
+    z-index: 4;
+    margin-top: 7%;
+}
+.contact  svg {
+    color: #e84545;
+
+}
+.xuatHienContact {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.login_register {
+    z-index: 3;
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: 20%;
+    padding: 5% 0%;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    transform:  scale(0);
+    transition: 0.4s;
+    background: #ffffff;
+    box-shadow: 1px 1px 10px #cccccc;
+
+}
+.login_register h3 {
+    text-transform:uppercase ;
+    color: #1c1c1c;
+    font-size: 24px;
+    font-family: "Play", sans-serif;
+    padding-left: 3% ;
+
+}
+.login_register  form {
+    padding: 0 3%;
+    color: #222;
+    font-size: 16px;
+}
+.login_register  form button {
+    text-transform:uppercase ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Play", sans-serif;
+    background: #2b2e4a;
+    border: #2b2e4a;
+}
+.login_register  form button:hover {
+    background: #22253b;
+}
+.xuatHienLogin {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
