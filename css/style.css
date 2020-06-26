@@ -50,8 +50,61 @@
     padding: 7px 10px;
     border-radius: 50%;
 }
+.menu .dropdown-menu a {
+    color: #2b2e4a !important;
+}
+.dropdown-menu {
+    width: 170%;
+}
+.dropdown-menu .media {
+    width: 143%;
+}
+.dropdown-menu .media h5{
+    font-size: 16px;
+    color: #2b2e4a;
+    font-weight: bold;
+}
+.dropdown-menu ul li {
+    padding: 2% 0;
+    border-bottom: 1px solid #a4a4a4;
+    font-size: 14px;
+    color: #cccccc;
+}
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+    padding-top: 5%;
+}
+.dropdown-menu ul li a:hover svg {
+    color: #e84545;
 
-/*làm slide*/
+}
+.dropdown-menu ul li a {
+    font-size: 20px;
+}
+.dropdown-menu ul li:last-child button {
+    font-size: 13px;
+    margin-left: 45%;
+}
+.dropdown-menu ul li:hover h5 {
+    color: #e84545;
+}
+.text_sum_money {
+    color: #2b2e4a;
+    margin-right: 2%;
+    padding: 2% ;
+    font-size: 16px;
+}
+.sum_money {
+    color: #e84545;
+    padding: 2% 0;
+    font-size: 16px;
+}
+.dropdown-menu .media img {
+    width: 70px;
+    height: 70px;
+}
+
+    /*làm slide*/
 .content-slide {
     position: absolute;
     top: 30%;
@@ -507,7 +560,7 @@
 .footer .content_footer h5 {
     color: #ffffff;
     font-family: "Play", sans-serif;
-    font-style: 20px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 .footer .content_footer svg {
@@ -760,5 +813,240 @@
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+}
+
+/*Làm trang chi tiết sản phẩm*/
+.detailProduct {
+    margin-top: 5%;
+}
+.detailProduct .detail_left h4 {
+    text-transform:uppercase ;
+    font-size: 17px;
+    color: #e84545;
+    font-weight:600;
+    margin-top: 5%;
+
+}
+.detailProduct .detail_left ul li {
+    font-size: 15px;
+    color: #2b2e4a;
+    font-weight: bold;
+}
+.detailProduct .detail_left ul .hoverLi:hover {
+    background: #e84545;
+    color: white;
+    cursor: pointer;
+}
+.detailProduct .detail_left ul .hoverLi:hover .sale {
+    color: white;
+}
+.activeLi {
+    background: #e84545;
+    color: white;
+}
+
+.detailProduct .detail_left ul:last-child {
+    margin-top: 15%;
+}
+.detailProduct .detail_left .media img  {
+    width: 64px;
+    height: 64px;
+}
+
+.detailProduct .detail_left ul:last-child .hoverLi {
+    padding: 5%;
+}
+.detailProduct .detail_left ul:last-child h5 {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    width: 150px;
+
+}
+.detailProduct .detail_left .unit {
+    color: tomato;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.detailProduct .detail_left .sale {
+    color: #e84545;
+}
+
+.detailProduct .waperDetailRight .img_detail img {
+    width: 100%;
+}
+.detailProduct .waperDetailRight .list_img_detail img {
+    width: 120px;
+    height: 120px;
+    margin-right: 2%;
+    transition: 0.4s;
+    overflow: hidden;
+
+}
+.detailProduct .waperDetailRight .list_img_detail img:hover {
+    transform: scale(1.1);
+    border: 1px solid #cccccc;
+}
+.activeImg {
+    transform: scale(1.1);
+    border: 1px solid #cccccc;
+}
+.detailProduct .waperDetailRight {
+    border-left: 1px solid #cccccc;
+}
+.detailProduct .waperDetailRight input {
+    display: inline;
+    width: 20%;
+    margin: 0 2%;
+}
+.detailProduct .waperDetailRight button {
+    font-family: "Play", sans-serif;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+.detailProduct .waperDetailRight .textDetail {
+    color: #2b2e4a;
+    font-size: 16px;
+    font-weight: bold;
+}
+.detailProduct .waperDetailRight p:nth-child(1) {
+    text-transform:uppercase ;
+    font-size: 15px;
+    color: #cccccc;
+}
+.detailProduct .waperDetailRight h3 {
+    font-family: "Play", sans-serif;
+    font-size: 27px;
+    color: #1c1c1c;
+    font-weight: 700;
+}
+.detailProduct .waperDetailRight p:nth-child(3) {
+    font-size: 24px;
+    color: #e84545;
+}
+.detailProduct .waperDetailRight hr {
+    margin: 5% 0;
+}
+/*.detailProduct .waperDetailRight .nav-tabs .nav-item {*/
+    /*border: 1px solid #cccccc;*/
+    /*border-right: none;*/
+    /*!*background: #2b2e4a;*!*/
+/*}*/
+/*.detailProduct .waperDetailRight .nav-tabs .nav-item a {*/
+    /*border: none;*/
+/*}*/
+.detailProduct .waperDetailRight .tab-content  {
+    padding: 5%;
+}
+.detailProduct .waperDetailRight .tab-content textarea {
+    width: 100%;
+}
+.detailProduct .waperDetailRight .tab-content button {
+    margin: 2% 0 0 0;
+}
+.detailProduct .waperDetailRight .tab-content .list-unstyled {
+    margin: 5% 0 0 0;
+}
+.detailProduct .waperDetailRight .tab-content .list-unstyled .text-muted {
+    font-size: 14px;
+}
+.detailProduct .waperDetailRight .tab-content .list-unstyled .card-text {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.detailProduct .waperDetailRight .tab-content .list-unstyled .card-title {
+    margin: 2% 0 1% 0;
+    color: #2b2e4a;
+}
+
+/*làm trang danh sách sản phẩm*/
+.waperListProductLeft ul:nth-child(2) {
+    margin-top: 15%;
+}
+.waperListProductLeft ul:nth-child(2) button {
+    margin-right: 8%;
+}
+.waperListProductlRight {
+    border-left: 1px solid #cccccc;
+}
+.waperListProductlRight h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #cccccc;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.waperListProductlRight h3 span {
+    color: #222222;
+}
+
+
+.waperListProductlRight .card a {
+    background: #fff;
+    border: 1px solid #2b2e4a;
+    color: #2b2e4a;
+    font-weight: bold;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+}
+
+.waperListProductlRight .card a:hover {
+    background:#2b2e4a ;
+    color: white;
+}
+.waperListProductlRight .card p {
+    color: #e84545;
+    font-weight: bold;
+}
+.waperListProductlRight .card h5 {
+    font-size: 16px;
+    color: #2b2e4a;
+}
+.waperListProductlRight .card:hover h5 {
+    color: #e84545;
+}
+.waperListProductlRight .card:hover {
+    box-shadow: 1px 1px 10px #cccccc;
+}
+.waperListProductlRight .card:hover a {
+    opacity: 1;
+    transform: translateY(0) ;
+    visibility: visible;
+}
+/*.waperListProductlRight {*/
+    /*!*width: 74%;*!*/
+    /*margin: auto;*/
+    /*!*display: flex;*!*/
+    /*!*justify-content: space-between ;*!*/
+    /*margin: 2% auto;*/
+/*}*/
+.waperListProductlRight .card {
+    text-align: center;
+    border: none;
+}
+
+/*làm giỏ hàng*/
+.my_cart {
+    padding: 5% 0 0 0;
+}
+.my_cart .my_cart_left img {
+    width: 100px;
+}
+.my_cart .my_cart_left .soluongTable {
+    width: 17%;
+}
+.my_cart .my_cart_right {
+    border-left: 1px solid #cccccc;
+}
+.my_cart .my_cart_right h3 {
+    font-family: "Play", sans-serif;
+    text-transform:uppercase ;
+    margin-bottom: 5%;
+
 }
 
