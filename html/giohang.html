@@ -164,6 +164,10 @@
                         <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
                     </svg></a></td>
                 </tr>
+                <tr>
+                    <td colspan="4">Tổng tiền</td>
+                    <td>1,000,200,000 ₫</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -171,13 +175,21 @@
             <h3>Thông tin khách hàng</h3>
             <form>
                 <div class="form-group">
+                    <label for="hoten">Họ tên</label>
+                    <input type="text" class="form-control" id="hoten" aria-describedby="emailHelp2">
+                </div>
+                <div class="form-group">
+                    <label for="sdt">Số điện thoại</label>
+                    <input type="number" class="form-control" id="sdt" aria-describedby="emailHelp2">
+                </div>
+                <div class="form-group">
                     <label for="exampleInputEmail3">Địa chỉ email</label>
                     <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp2">
                     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail4">Địa chỉ</label>
-                    <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp3">
+                    <input type="text" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp3">
                     <small id="emailHelp3" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
@@ -185,9 +197,6 @@
                     <textarea class="form-control" aria-label="With textarea" id="exampleInputEmail5"></textarea>
                 </div>
                 <button type="submit" class="btn btn-danger">ĐẶT HÀNG</button>
-                <button type="button" id="example" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                    Popover on right
-                </button>
             </form>
         </div>
     </div>
@@ -378,5 +387,4 @@
     </div>
 </div>
 </body>
-<script>$('#example').popover(options)</script>
 </html>
