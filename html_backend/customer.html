@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hóa đơn</title>
+    <title>Khách Hàng</title>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
 
     <!-- JS, Popper.js, and jQuery -->
@@ -19,10 +19,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link href="../css/style_backend.css" rel="stylesheet" >
-
-
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -94,82 +90,68 @@
         <div class="col-sm-9  col-lg-10  main">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Hóa đơn</h1>
+                    <h1 class="page-header">Khách hàng</h1>
                 </div>
             </div><!--/.row-->
 
             <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-md-7 col-lg-7">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Danh Sách Hóa Đơn Theo Ngày</div>
+                        <div class="panel-heading">Danh sách khách hàng</div>
                         <div class="panel-body">
                             <div class="bootstrap-table">
                                 <table class="table table-bordered">
                                     <thead>
                                     <tr class="bg-primary">
-                                        <th>ID</th>
-                                        <th>Người mua</th>
-                                        <th>Tổng tiền</th>
-                                        <th>Ngày đặt</th>
-                                        <th>Tùy chọn</th>
+                                        <th>Email khách</th>
+                                        <th style="width:30%">Tùy chọn</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>duy12a7vancoc@gmail.com</td>
-                                        <td>1.000.000.000</td>
-                                        <td>01/07/2020  17:56:00</td>
+                                        <td>iPhone</td>
                                         <td>
-                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Chi tiết</a>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
                                             <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
                                         </td>
                                     </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            Tìm kiếm hóa đơn theo ngày
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <form>
-                                    <label>Ngày đặt:</label>
-                                    <input type="date" name="name" class="form-control date_order" value="">
-                                    <button class="btn btn-primary add" style="margin-top: 10px">Tìm kiếm</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Chi Tiết Hóa Đơn</div>
-                        <div class="panel-body">
-                            <div class="bootstrap-table">
-                                <p><span class="title_bills"> Địa chỉ : </span>Cụm 5 - Vân Phúc - Phúc Thọ - Hà Nội</p>
-                                <p><span class="title_bills"> SĐT : </span>0946817701</p>
-                                <p><span class="title_bills"> Ghi chú : </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure libero minus molestiae optio quae totam voluptatum? Ab corporis id in natus non! Earum, iste laudantium natus necessitatibus provident velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto consectetur consequuntur culpa dignissimos ea, earum facere hic, inventore labore molestias mollitia nisi quasi quibusdam ratione recusandae tempore vel veritatis.</p>
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <tr class="bg-primary">
-                                        <th>ID</th>
-                                        <th>Sản phẩm</th>
-                                        <th>Số lượng</th>
-                                        <th>Giá</th>
-                                        <th>Tùy chọn</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Màn hình DVD ToYota 20290</td>
-                                        <td>10</td>
-                                        <td>100.000.000</td>
+                                        <td>Samsung</td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                                            <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nokia</td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                                            <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTC</td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                                            <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>LG</td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                                            <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sony</td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                                            <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Motorola</td>
                                         <td>
                                             <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
                                             <a href="#" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
@@ -187,19 +169,11 @@
 </div>
 </body>
 <script>
-   $(document).ready(function () {
-//       var date = new Date(Date.now()).toLocaleString();
-//       var date1 = new Date('YYYY-MM-DD');
-//
-//       var date2 = new Date();
-//       date2.toISOString()
-//       var d = new Date();
-//       var n = d.toISOString();
-//
-//       $('.date_order').val(n)
-       $('.date_order').change(function () {
-       })
-
-   })
+    $(document).ready(function () {
+        $('.menu li').click(function () {
+            $('.menu li').removeClass('activeLi');
+            $(this).addClass('activeLi');
+        })
+    })
 </script>
 </html>

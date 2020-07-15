@@ -73,3 +73,7 @@ select, option {
     text-transform: uppercase;
     color: #2b2e4a;
 }
+.title_bills {
+    color: #2b2e4a;
+    font-weight: bold;
+}

@@ -11,6 +11,7 @@
     border: 1px solid;
     padding: 1.5% 8%;
     border-bottom: 2px solid red;
+    transition: 1s;
 }
 .logo {
     padding: 0 !important;
@@ -18,7 +19,7 @@
     margin-right: 3%;
 }
 .menu img {
-    width: 100%;
+    width: 70%;
 }
 .menu .active {
     color: #e84545 !important;
@@ -46,7 +47,7 @@
     margin-top: 6px;
 }
 .menu .sl {
-    background: #28a745 ;
+    background: #5066df ;
     padding: 7px 10px;
     border-radius: 50%;
 }
@@ -102,6 +103,16 @@
 .dropdown-menu .media img {
     width: 70px;
     height: 70px;
+}
+.fixNav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 1s;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
     /*làm slide*/
@@ -530,6 +541,9 @@
     transform: scale(1);
 }
 /*css footer*/
+.footer img {
+    width: 80%;
+}
 .footer {
     background: url("../img/bkg_footer.jpg") no-repeat;
     background-size: cover;

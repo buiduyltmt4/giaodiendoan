@@ -471,35 +471,6 @@
     </div>
 </div>
 </body>
-<script src="../js/js1.js"></script>
-<script>
-    function format(x) {
-        return isNaN(x)?"":x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-    $(document).ready(function () {
-        $('#customRange2').change(function () {
-            var price = $(this).val();
-            $('.price').text(format(price) + ' đ');
-        });
-        $('.li_contact').click(function () {
-            $('.mash_body').addClass('xuatHienBody');
-            $('.contact').addClass('xuatHienLogin');
-            return false;
-        });
-
-        $('.mash_body').click(function () {
-            $('.mash_body').removeClass('xuatHienBody');
-            $('.contact').removeClass('xuatHienLogin');
-            $('.login_register').removeClass('xuatHienLogin');
-        });
-        $('.li_login').click(function () {
-            $('.mash_body').addClass('xuatHienBody');
-            $('.login_register').addClass('xuatHienLogin');
-            return false;
-        });
-
-
-    })
-</script>
+<script src="../js/js2.js"></script>
 
 </html>
